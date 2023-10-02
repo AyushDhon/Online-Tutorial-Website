@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+               background-color:white;
+               font-family:calibri;
+            }
+            .header /*for the header*/
+            {
+                text-align:center;
+                font-size:28pt;
+                font-weight:bold;
+                font-family:calibri;
+                margin-top:20px;
+                user-select: none;
+            }
+            .topic /* topic like Introduction, Properties*/
+            {
+                margin-left:10px;
+                font-size:24pt;
+                font-family:calibri;
+                user-select:none;
+                font-weight:bold;
+                color:#007bff;
+                text-decoration:underline;
+            }
+            .subtopic
+            {
+                margin-left:15px;
+                font-size:20pt;
+                font-family:calibri;
+                user-select:none;
+                font-weight:500;
+            }
+            .content
+            {
+                margin-left:20px;
+                font-size:18pt;
+                font-family:calibri;
+            }
+            .code /*for the code*/
+            {
+                margin-left:10px;
+                background-color:white;
+                color:black;
+                border-left: 5px solid #007bff;
+                border-top: 3px solid #007bff;
+            }
+            .img1
+            {
+                margin-left:30px;
+                border:3px solid #007bff;
+            }
+            p
+            {
+                margin-left:20px;
+                font-size:18pt;
+                font-family:calibri;
+            }
+            li
+            {
+                font-size:18pt;
+            }
+            .quizbutton
+            {
+                margin-left:500px;
+                margin-top: 40px;
+            }
+            .quizbutton button
+            {
+                width:150px;
+                height: 50px;
+                background-color:#0070F3;
+                padding:3px;
+                border-radius:10px;
+                color:white;
+                font-size:20pt;
+            }
+            .quizbutton button:hover
+            {
+                background-color:#0071f3c3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">BASICS</div>
+        <header>
+            <div class="topic">1.1 INTRODUCTION</div>
+        </header>
+        <section>
+            <div class="content">  
+                <ul>
+                    <li>CSS is the language we use to style an HTML document.</li>
+                    <li> CSS describes how HTML elements should be displayed.</li>
+                    <li>This tutorial will teach you CSS from basic to advanced.</li>  
+                </ul></div> 
+                <div class="subtopic">CSS Example:</div><br>
+                <iframe class=code src="CssIntro1.html" width="400" height="150"></iframe><br><br>
+        </section>
+
+        <header>
+            <div class="topic">1.2 Syntax:</div><br>
+        </header>
+        <section>
+            <img class=img1 src="CSS1.png" width="300" height="200">
+                    <p>The selector points to the HTML element you want to style.</p>
+                    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                    <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                    <div class="subtopic">Example:</div><br>
+                    <iframe src="CSSSyntaxCode.html" width="300" height="100x" class="code"></iframe> 
+        </section><br>
+        <header>
+            <div class="topic">1.3 Selectors</div><br>
+        </header>
+        <section>
+            <div class="subtopic">CSS SELECTORS</div>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>We can divide CSS selectors into five categories:</p>
+            <ul>
+                <li>Simple selectors (select elements based on name, id, class)</li>
+                <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <p>This page will explain the most basic CSS selectors.</p>
+        </section>
+        <div class="quizbutton">
+            <button>Take Quiz</button>
+        </div>
+            
+                
+                
+                    
+                
+           
+        
+        
+    </body>
+</html>

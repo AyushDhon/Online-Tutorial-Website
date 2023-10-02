@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color:rgba(179, 178, 178, 0.775);
+                font-family:calibri;
+            }
+            .whole
+            {
+                position:absolute;
+                margin-left:420px;
+                margin-top:50px;
+                width:600px;
+                height:500px;
+                background-color:white;
+                border-radius:20px;
+                box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
+                0px 6px 20px 0 rgba(0,0,0,0.19);
+                
+            }
+            .queriestxt
+            {
+                position:absolute;
+                margin-left:230px;
+                margin-top:20px;
+                text-align:center;
+                color:#0070F3;
+                font-weight:bold;
+                font-size:20pt;
+            }
+            hr
+            {
+                height:1.5px;
+                background-color:gray;
+                border:none;
+            }
+            .form
+            {
+                position:absolute;
+                margin-left:90px;
+                margin-top:10px;
+                
+            }
+            table
+            {
+                font-size:12pt;
+            }
+            button
+            {
+                background-color:black;
+                color:white;
+                padding:10px;
+                border-radius:10px;
+            }
+            button:hover
+            {
+                background-color:#0070F3;
+            }
+
+        </style>
+        <script>
+            function sub()
+            {
+                var firstname = document.getElementById("fname").value;
+                if(firstname=="")
+                {
+                    document.getElementById("fname").innerHTML = "h";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="whole">
+            <div class="queriestxt">QUERIES</div><br><br><br><hr>
+            <div class="form">
+                <table cellpadding="10">
+                    <tr>
+                        <td>
+                            Name<br>
+                            <input type="text" placeholder="First Name" name="fn" required id="fname">
+                        </td>
+                        <td>
+                            <br>
+                            <input type="text" placeholder="Last Name" name="ln" required id="lname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Email Address<br>
+                            <input type="text" placeholder="Eg.V3Mates@gmail.com" name="email" size="20" required>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            Category
+                        </td>
+                        <td>
+                            <input type="radio" name="tech">Technical<br>
+                            <input type="radio" name="study">Study<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Topic
+                        </td>
+                        <td>
+                            <input list="topics" placeholder="Search Topic">
+                            <datalist id="topics">
+                                <option value="Computer Science"></option>
+                                <option value="Biology"></option>
+                                <option value="Chemistry"></option>
+                                <option value="Physics"></option>
+                                <option value="Mathematics"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drop Message</td>
+                        <td>
+                            <textarea rows="5" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <button name="submit" onclick="sub()">SUBMIT</button>
+                        </td>
+                        <td align="center">
+                            <button>CANCEL</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

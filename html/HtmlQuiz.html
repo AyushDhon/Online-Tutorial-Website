@@ -1,0 +1,579 @@
+<html>
+    <head>
+        <style>
+            *
+            { 
+                font-family: calibri;
+            }
+            div.heading
+            {
+                text-align:center;
+                padding:10px;
+                font-size:50px;
+                color: #0070F3;
+                font-weight: bold;
+                position:relative;
+            }
+            hr
+            {
+                
+                position:relative;
+               
+                border: none;
+                border-bottom: 3px solid #BE2A68;
+            }
+            /*question*/
+            div.q1, div.q2, div.q3, div.q4, div.q5,
+            div.q6, div.q7, div.q8, div.q9, div.q10
+            {
+                width:500px;
+                position:relative;
+                top:30px;
+                margin-left:20px;  
+               
+            }
+            /*option*/
+            #optiona11 ,#optiona12, #optiona13, #optiona14,
+            #optiona21 ,#optiona22, #optiona23, #optiona24,
+            #optiona31 ,#optiona32, #optiona33, #optiona34,
+            #optiona41 ,#optiona42, #optiona43, #optiona44,
+            #optiona51 ,#optiona52, #optiona53, #optiona54,
+            #optiona61 ,#optiona62, #optiona63, #optiona64,
+            #optiona71 ,#optiona72, #optiona73, #optiona74,
+            #optiona81 ,#optiona82, #optiona83, #optiona84,
+            #optiona91 ,#optiona92, #optiona93, #optiona94,
+            #optiona101 ,#optiona102, #optiona103, #optiona104
+            {
+                padding:5px;
+                border:2px solid #0070F3;
+                border-radius:5px;
+                font-size:20px;
+                position:relative;
+            } 
+            
+            /*submit button*/
+            div.submit-button button
+            {
+                background-color: #0070F3;
+                border-radius:10px;
+                top:30px;
+                margin-left:650px;
+                padding:10px;
+                font-size:20px;
+                color:white;
+                position:relative;  
+                cursor:pointer;
+            } 
+            /*result table*/ 
+            table
+            {
+                position:relative;
+                top:50px;
+                visibility: hidden;
+                margin-left:570px;
+                background-color:aliceblue;
+                border-color: #0070F3;
+                font-weight:bold;
+                text-align:center;
+                font-size:12pt;
+            } 
+            
+
+        </style>
+        <script>
+            function htmlquiz()
+            {
+                var count=0;
+                var correct=0;
+                var wrong=0;
+                var mark=0;
+
+                /*question1*/
+                if(a11.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona11").style.borderColor = "green";
+                    document.getElementById("a11").style.accentColor = "green";
+                }
+                if(a12.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona11").style.borderColor ="green";
+                    document.getElementById("a11").style.accentColor = "green";
+                    document.getElementById("optiona12").style.borderColor ="red";
+                    document.getElementById("a12").style.accentColor = "red";
+                }
+                if(a13.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona11").style.borderColor ="green";
+                    document.getElementById("a11").style.accentColor = "green";
+                    document.getElementById("optiona13").style.borderColor ="red";
+                    document.getElementById("a13").style.accentColor = "red";
+                }
+                if(a14.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona11").style.borderColor="green";
+                    document.getElementById("a11").style.accentColor = "green";
+                    document.getElementById("optiona14").style.borderColor ="red";
+                    document.getElementById("a14").style.accentColor = "red";
+                }
+
+                /*question-2*/
+                if(a21.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona21").style.borderColor = "green";
+                    document.getElementById("a21").style.accentColor = "green";
+                }
+                if(a22.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona21").style.borderColor ="green";
+                    document.getElementById("a21").style.accentColor = "green";
+                    document.getElementById("optiona22").style.borderColor ="red";
+                    document.getElementById("a22").style.accentColor = "red";
+                }
+                if(a23.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona21").style.borderColor ="green";
+                    document.getElementById("a21").style.accentColor = "green";
+                    document.getElementById("optiona23").style.borderColor ="red";
+                    document.getElementById("a23").style.accentColor = "red";
+                }
+                if(a24.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona21").style.borderColor="green";
+                    document.getElementById("a21").style.accentColor = "green";
+                    document.getElementById("optiona24").style.borderColor ="red";
+                    document.getElementById("a24").style.accentColor = "red";
+                }
+
+                /*question-3*/
+                if(a31.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona31").style.borderColor = "green";
+                    document.getElementById("a31").style.accentColor = "green";
+                }
+                if(a32.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona31").style.borderColor ="green";
+                    document.getElementById("a31").style.accentColor = "green";
+                    document.getElementById("optiona32").style.borderColor ="red";
+                    document.getElementById("a32").style.accentColor = "red";
+                }
+                if(a33.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona31").style.borderColor ="green";
+                    document.getElementById("a31").style.accentColor = "green";
+                    document.getElementById("optiona33").style.borderColor ="red";
+                    document.getElementById("a33").style.accentColor = "red";
+                }
+                if(a34.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona31").style.borderColor="green";
+                    document.getElementById("a31").style.accentColor = "green";
+                    document.getElementById("optiona34").style.borderColor ="red";
+                    document.getElementById("a34").style.accentColor = "red";
+                }
+
+                /*question-4*/
+                if(a41.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona41").style.borderColor = "green";
+                    document.getElementById("a41").style.accentColor = "green";
+                }
+                if(a42.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona41").style.borderColor ="green";
+                    document.getElementById("a41").style.accentColor = "green";
+                    document.getElementById("optiona42").style.borderColor ="red";
+                    document.getElementById("a42").style.accentColor = "red";
+                }
+                if(a43.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona41").style.borderColor ="green";
+                    document.getElementById("a41").style.accentColor = "green";
+                    document.getElementById("optiona43").style.borderColor ="red";
+                    document.getElementById("a43").style.accentColor = "red";
+                }
+                if(a44.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona41").style.borderColor="green";
+                    document.getElementById("a41").style.accentColor = "green";
+                    document.getElementById("optiona44").style.borderColor ="red";
+                    document.getElementById("a44").style.accentColor = "red";
+                }
+
+                /*question-5*/
+                if(a51.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona52").style.borderColor = "green";
+                    document.getElementById("a52").style.accentColor = "green";
+                    document.getElementById("optiona51").style.borderColor ="red";
+                    document.getElementById("a51").style.accentColor = "red";
+                }
+                if(a52.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona52").style.borderColor = "green";
+                    document.getElementById("a52").style.accentColor = "green";
+                    
+                }
+                if(a53.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona52").style.borderColor = "green";
+                    document.getElementById("a52").style.accentColor = "green";
+                    document.getElementById("optiona53").style.borderColor ="red";
+                    document.getElementById("a53").style.accentColor = "red";
+                }
+                if(a54.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona52").style.borderColor = "green";
+                    document.getElementById("a52").style.accentColor = "green";
+                    document.getElementById("optiona54").style.borderColor ="red";
+                    document.getElementById("a54").style.accentColor = "red";
+                }
+
+                /*question-6*/
+                if(a61.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona61").style.borderColor = "green";
+                    document.getElementById("a61").style.accentColor = "green";
+                }
+                if(a62.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona61").style.borderColor ="green";
+                    document.getElementById("a61").style.accentColor = "green";
+                    document.getElementById("optiona62").style.borderColor ="red";
+                    document.getElementById("a62").style.accentColor = "red";
+                }
+                if(a63.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona61").style.borderColor ="green";
+                    document.getElementById("a61").style.accentColor = "green";
+                    document.getElementById("optiona63").style.borderColor ="red";
+                    document.getElementById("a63").style.accentColor = "red";
+                }
+                if(a64.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona61").style.borderColor="green";
+                    document.getElementById("a61").style.accentColor = "green";
+                    document.getElementById("optiona64").style.borderColor ="red";
+                    document.getElementById("a64").style.accentColor = "red";
+                }
+
+                /*question-7*/
+                if(a71.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona73").style.borderColor ="green";
+                    document.getElementById("a73").style.accentColor = "green";
+                    document.getElementById("optiona71").style.borderColor ="red";
+                    document.getElementById("a71").style.accentColor = "red";
+                }
+                if(a72.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona73").style.borderColor ="green";
+                    document.getElementById("a73").style.accentColor = "green";
+                    document.getElementById("optiona72").style.borderColor ="red";
+                    document.getElementById("a72").style.accentColor = "red";
+                }
+                if(a73.checked)
+                {
+                    count++;
+                    wrong++;
+                    
+                    document.getElementById("optiona73").style.borderColor ="green";
+                    document.getElementById("a73").style.accentColor = "green";
+                }
+                if(a74.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona73").style.borderColor="green";
+                    document.getElementById("a73").style.accentColor = "green";
+                    document.getElementById("optiona74").style.borderColor ="red";
+                    document.getElementById("a74").style.accentColor = "red";
+                }
+
+                /*question-8*/
+                if(a81.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona81").style.borderColor = "green";
+                    document.getElementById("a81").style.accentColor = "green";
+                }
+                if(a82.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona81").style.borderColor ="green";
+                    document.getElementById("a81").style.accentColor = "green";
+                    document.getElementById("optiona82").style.borderColor ="red";
+                    document.getElementById("a82").style.accentColor = "red";
+                }
+                if(a83.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona81").style.borderColor ="green";
+                    document.getElementById("a81").style.accentColor = "green";
+                    document.getElementById("optiona83").style.borderColor ="red";
+                    document.getElementById("a83").style.accentColor = "red";
+                }
+                if(a84.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona81").style.borderColor="green";
+                    document.getElementById("a81").style.accentColor = "green";
+                    document.getElementById("optiona84").style.borderColor ="red";
+                    document.getElementById("a84").style.accentColor = "red";
+                }
+
+                /*question-9*/
+                if(a91.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona92").style.borderColor = "green";
+                    document.getElementById("a92").style.accentColor = "green";
+                    document.getElementById("optiona91").style.borderColor ="red";
+                    document.getElementById("a91").style.accentColor = "red";
+
+                }
+                if(a92.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona92").style.borderColor ="green";
+                    document.getElementById("a92").style.accentColor = "green";
+                    
+                }
+                if(a93.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona92").style.borderColor ="green";
+                    document.getElementById("a92").style.accentColor = "green";
+                    document.getElementById("optiona93").style.borderColor ="red";
+                    document.getElementById("a93").style.accentColor = "red";
+                }
+                if(a94.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona92").style.borderColor="green";
+                    document.getElementById("a92").style.accentColor = "green";
+                    document.getElementById("optiona94").style.borderColor ="red";
+                    document.getElementById("a94").style.accentColor = "red";
+                }
+
+                /*question-10*/
+                if(a101.checked)
+                {
+                    count++;
+                    correct++;
+                    mark++;
+                    document.getElementById("optiona103").style.borderColor = "green";
+                    document.getElementById("a103").style.accentColor = "green";
+                    document.getElementById("optiona101").style.borderColor ="red";
+                    document.getElementById("a101").style.accentColor = "red";
+                }
+                if(a102.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona101").style.borderColor ="green";
+                    document.getElementById("a101").style.accentColor = "green";
+                    document.getElementById("optiona102").style.borderColor ="red";
+                    document.getElementById("a102").style.accentColor = "red";
+                }
+                if(a103.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona101").style.borderColor ="green";
+                    document.getElementById("a101").style.accentColor = "green";
+                    document.getElementById("optiona103").style.borderColor ="red";
+                    document.getElementById("a103").style.accentColor = "red";
+                }
+                if(a104.checked)
+                {
+                    count++;
+                    wrong++;
+                    document.getElementById("optiona101").style.borderColor="green";
+                    document.getElementById("a101").style.accentColor = "green";
+                    document.getElementById("optiona104").style.borderColor ="red";
+                    document.getElementById("a104").style.accentColor = "red";
+                }
+
+
+
+                
+                /*result table*/
+                document.getElementById("res-tab").style.visibility = "visible";
+                document.getElementById("attend").innerHTML = count;
+                document.getElementById("correct").innerHTML = correct;
+                document.getElementById("wrong").innerHTML = wrong;
+                document.getElementById("mark").innerHTML = mark;
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="heading">
+            HTML
+        </div>
+        <hr>
+        <div class="q1">
+            <h1>1.What does HTML stand for?</h1>
+            <div id="optiona11"><input type=radio name="a1" id="a11">Hyper Text Markup Language</div><br>
+            <div id="optiona12"><input type=radio name="a1" id="a12">Home Tool Markup Language</div><br>
+            <div id="optiona13"><input type=radio name="a1" id="a13">Hyperlink Text Markup Language</div><br>
+            <div id="optiona14"><input type=radio name="a1" id="a14">High Tech Markup Language</div><br>
+        </div>
+        <div class="q2">
+            <h1>2.What attribute is used to specify the background color of an element in HTML?</h1>
+            <div id="optiona21"><input type=radio name="a2" id="a21">bgcolor</div><br>
+            <div id="optiona22"><input type=radio name="a2" id="a22">color</div><br>
+            <div id="optiona23"><input type=radio name="a2" id="a23">bg</div><br>
+            <div id="optiona24"><input type=radio name="a2" id="a24">background-color</div><br>
+        </div>
+        <div class="q3">
+            <h1>3.Which attribute is used to specify the font size of text in HTML?</h1>
+            <div id="optiona31"><input type=radio name="a3" id="a31">size</div><br>
+            <div id="optiona32"><input type=radio name="a3" id="a32">font-size</div><br>
+            <div id="optiona33"><input type=radio name="a3" id="a33">text-size</div><br>
+            <div id="optiona34"><input type=radio name="a3" id="a34">font-style</div><br>
+        </div>
+        <div class="q4">
+            <h1>4.What is the purpose of the img tag</h1>
+            <div id="optiona41"><input type=radio name="a4" id="a41">To display an image</div><br>
+            <div id="optiona42"><input type=radio name="a4" id="a42">To create a hyperlink</div><br>
+            <div id="optiona43"><input type=radio name="a4" id="a43">To add a video</div><br>
+            <div id="optiona44"><input type=radio name="a4" id="a44">To create a form</div><br>
+        </div>
+        <div class="q5">
+            <h1>5.Which of the following attribute is used to specify an image's source in HTML?</h1>
+            <div id="optiona51"><input type=radio name="a5" id="a51">href</div><br>
+            <div id="optiona52"><input type=radio name="a5" id="a52">src</div><br>
+            <div id="optiona53"><input type=radio name="a5" id="a53">alt</div><br>
+            <div id="optiona54"><input type=radio name="a5" id="a54">title</div><br>
+        </div>
+        <div class="q6">
+            <h1>6.Which tag is used to define a form?</h1>
+            <div id="optiona61"><input type=radio name="a6" id="a61">form</div><br>
+            <div id="optiona62"><input type=radio name="a6" id="a62">input</div><br>
+            <div id="optiona63"><input type=radio name="a6" id="a63">button</div><br>
+            <div id="optiona64"><input type=radio name="a6" id="a64">select</div><br>
+        </div>
+        <div class="q7">
+            <h1>7.What is the purpose of the form tag</h1>
+            <div id="optiona71"><input type=radio name="a7" id="a71">To create a table</div><br>
+            <div id="optiona72"><input type=radio name="a7" id="a72">To create a list</div><br>
+            <div id="optiona73"><input type=radio name="a7" id="a73">To create a form for user input</div><br>
+            <div id="optiona74"><input type=radio name="a7" id="a74">To add a video</div><br>
+        </div>
+        <div class="q8">
+            <h1>8.Who is making the web standards?</h1>
+            <div id="optiona81"><input type=radio name="a8" id="a81">The World Wide Web Consortium</div><br>
+            <div id="optiona82"><input type=radio name="a8" id="a82">Mozilla</div><br>
+            <div id="optiona83"><input type=radio name="a8" id="a83">Microsoft</div><br>
+            <div id="optiona84"><input type=radio name="a8" id="a84">Google</div><br>
+        </div>
+        <div class="q9">
+            <h1>9.What character is used to indicate an end tag?</h1>
+            <div id="optiona91"><input type=radio name="a9" id="a91">*</div><br>
+            <div id="optiona92"><input type=radio name="a9" id="a92">/</div><br>
+            <div id="optiona93"><input type=radio name="a9" id="a93">.</div><br>
+            <div id="optiona94"><input type=radio name="a9" id="a94">^</div><br>
+        </div>
+        <div class="q10">
+            <h1>10.In HTML, onblur and onfocus are:</h1>
+            <div id="optiona101"><input type=radio name="a10" id="a101">Semantic elements</div><br>
+            <div id="optiona102"><input type=radio name="a10" id="a102">Style attributes</div><br>
+            <div id="optiona103"><input type=radio name="a10" id="a103">Event attributes</div><br>
+            <div id="optiona104"><input type=radio name="a10" id="a104">HTML elements</div><br>
+        </div>
+        <div class="submit-button">
+            <button onclick="htmlquiz()">SUBMIT</button>
+        </div>
+        <div class="result-table">
+            <table id="res-tab" border="2" cellpadding="20">
+                <tr>
+                    <td>No of question attend</td>
+                    <td id="attend"></td>
+                </tr>
+                <tr>
+                    <td>Correct</td>
+                    <td id="correct"></td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td id="wrong"></td>
+                </tr>
+                <tr>
+                    <td>Mark</td>
+                    <td id="mark"></td>
+                </tr>
+            </table><br>
+        </div>
+    </body>
+</html>
