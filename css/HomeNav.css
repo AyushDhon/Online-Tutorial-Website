@@ -1,0 +1,34 @@
+body
+{
+    background-color:#0070F3;
+}
+table
+{
+    font-family:calibri;
+    font-size:16pt;
+
+}
+a:link
+{
+    text-align:right;
+    color:white;
+    text-decoration:none;
+    
+}
+a:visited
+{
+    color:white;
+    text-decoration:none;
+}
+a:hover
+{   
+    text-decoration:none;
+    color:gray;
+}
+.bg2
+{
+    backgroound-color:gray;
+    width:100px;
+    height:100px;
+    
+}
